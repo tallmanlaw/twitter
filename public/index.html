@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <title>Twitter Clone</title>
+</head>
+
+<body>
+    <header>
+        <i class="fab fa-twitter"></i>
+        <p>Home</p>
+        <button id="new-tweet" class="tweet-button">Tweet</button>
+    </header>
+    <div id="cover">
+        <div><img id="logo" class="profile-avatar logo" src="https://pbs.twimg.com/profile_images/632228259879628800/-gvVhzPn_400x400.png"
+                alt="U.S. EPA"></div>
+    </div>
+    <nav></nav>
+    <main>
+        <div class="container feed">
+            <div class="left-feed">
+                <h2>U.S. EPA</h2>
+                <p>
+                    <h6>@EPA</h6>
+                </p>News, links, tips, and conversation from the U.S. Environmental Protection Agency. Neither RT nor
+                @mentions imply endorsement.<br>
+                <div><br><i class="far fa-map-marker-alt fa sm">USA</i><br><i class="fas fa-link"></i><a href="https:www.epa.gov"
+                        target="_blank">epa.gov</a><br><i class="fal fa-calendar-alt fa sm"></i>Joined May 2008</div>
+                <br><button id="sign-up">Tweet to U.S. EPA</button>
+                <br><br><h2>6 Followers to Follow</h2><br><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/929045512778547200/OPeQ7BRn_bigger.jpg" alt="Oliver Christie"><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/875440182501277696/n-Ic9nBO_bigger.jpg" alt="Washington Post"><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/1047664113726382081/1z2vgDwB_bigger.jpg" alt="CNN Business"><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/615510114447953920/_1c4TTMM_bigger.jpg" alt="Mike Bloomberg"><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/971072776902729729/G959TWAT_bigger.jpg" alt="Maryland Nonprofits"><img class="Avatar Avatar--size48" style="border-radius: 100%" src="https://pbs.twimg.com/profile_images/585597496543555588/DxNySxf4_bigger.jpg" alt="Ian Graham">
+            </div>
+            
+            <div class="center-feed">
+                <h2><img class="avatar js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/632228259879628800/-gvVhzPn_bigger.png">EPA<span
+                        class="center-head" style="font-weight: initial">@EPA<span class="center-head-right">Oct.5</h2><button id="delete-tweet" class="delete-button">Delete</button></span>
+                <br><br><img data-aria-label-part="" src="https://pbs.twimg.com/media/DpPsyTDWwAEYVVP.jpg"
+                    alt="Image of flooded street with text: &quot;Flood waters can contain disease-containing bacteria and viruses, hazardous wastes and chemicals, or dangerous objects like broken glass or tree branches. All can cause serious injury. Avoid flood water and take precautions..&quot; The EPA logo and  https://www.epa.gov/natural-disasters/flooding also appear in the image."
+                    style="width: 100%; top: -0px;">
+            </div>
+            <div class="right-feed">
+                <h2>How to Twitter</h2>Sign up now to get your own personalized timeline!<br><br><button id="sign-up" style="margin-bottom: 20px">Sign
+                    Up</button><br>
+                <section><h2>Who to Follow</h2><img class="avatar js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/432081479/DOI_LOGO_bigger.jpg" alt=""><img class="avatar js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/897104898113904642/ReGba9fu_bigger.jpg" alt=""><img class="avatar js-action-profile-avatar" src="https://pbs.twimg.com/profile_images/445550654/twitter_logo_bigger.png" alt=""></section>
+            </div>
+        </div>
+    </main>
+    <div class="modal-container hide">
+        <div class="modal">
+            <h2>Compose new Tweet <span class="close-modal">x</span></h2>
+            <textarea id="text" maxlength="140" placeholder="What's happening?"></textarea>
+            <div id="counter"></div>
+            <button id="compose-tweet" class="tweet-button fire">Tweet</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
