@@ -10,7 +10,7 @@ app.use(express.json()); //needed for json package
 app.use(express.static("public")); //to locate public file folder with our front end files
 
 
-mongoose.connect('mongodb://localhost/twitter', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/twitter', { useNewUrlParser: true });
 
 
 require('./routes/api-routes')(app); 
